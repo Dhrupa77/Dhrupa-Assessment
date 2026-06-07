@@ -54,7 +54,7 @@ struct Transaction: Identifiable, Encodable {
 
     var isCredit: Bool { transactionType == .credit }
 
-    /// Last 4 digits of the card number, e.g. "8012"
+    /// Last 4 digits of the card number, e.g. "5432"
     var lastFourDigits: String {
         String(fromCardNumber.suffix(4))
     }
@@ -64,7 +64,7 @@ struct Transaction: Identifiable, Encodable {
 
     /// "2021-05-31" → "May 31, 2021"
     /// Uses local DateFormatter instances — avoids non-Sendable
-    /// static storage that would trigger @MainActor inference.
+    /// static storage that would trigger @MainActor inference for unit test.
     var formattedDate: String {
         let input = DateFormatter()
         input.dateFormat = "yyyy-MM-dd"
@@ -78,10 +78,8 @@ struct Transaction: Identifiable, Encodable {
 }
 
 // MARK: - Manual Decodable conformance
-//
-// Keeping this in a separate extension makes the isolation boundary
-// explicit: this extension has no @MainActor context, so the
-// conformance and its init are unconditionally nonisolated.
+
+///to clean warrnings with default as they are nonsendable and was giving warnning  created manual.
 
 extension Transaction: Decodable {
 

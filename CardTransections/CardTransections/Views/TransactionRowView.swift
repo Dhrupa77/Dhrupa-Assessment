@@ -14,12 +14,11 @@ struct TransactionRowView: View {
     var body: some View {
         HStack(spacing: 14) {
 
-            // ── Type indicator dot ───────────────────────────────────────
+            // Card Type indicator dot (Red/Till) added extra to get idea without going in detail view
             Circle()
                 .fill(transaction.isCredit ? Color.brandTeal : Color.brandRed)
                 .frame(width: 10, height: 10)
 
-            // ── Text content ─────────────────────────────────────────────
             VStack(alignment: .leading, spacing: 3) {
                 Text(transaction.merchantName)
                     .font(.system(size: 16, weight: .medium))
@@ -40,7 +39,6 @@ struct TransactionRowView: View {
 
             Spacer()
 
-            // ── Amount ───────────────────────────────────────────────────
             VStack(alignment: .trailing, spacing: 2) {
                 Text(transaction.formattedAmount)
                     .font(.system(size: 16, weight: .semibold))

@@ -36,8 +36,8 @@ struct TransactionListView: View {
 
     private var listView: some View {
         List(viewModel.transactions) { transaction in
-            //TransactionDetailView(transaction: transaction)
-            NavigationLink(destination: self) {
+            
+            NavigationLink(destination: TransactionDetailView(transaction: transaction)) {
                 TransactionRowView(transaction: transaction)
             }
             // Remove NavigationLink's default chevron tint
