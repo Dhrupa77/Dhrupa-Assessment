@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		FB9C49352FD6250800BF5AD5 /* CardTransectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTransectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9C49422FD6266500BF5AD5 /* CardTransections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTransections.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9C49872FD632BF00BF5AD5 /* CardTransections.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CardTransections.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +56,7 @@
 		FB9C48EE2FD6155B00BF5AD5 = {
 			isa = PBXGroup;
 			children = (
+				FB9C49872FD632BF00BF5AD5 /* CardTransections.xctestplan */,
 				FB9C48F92FD6155B00BF5AD5 /* CardTransections */,
 				FB9C49352FD6250800BF5AD5 /* CardTransectionsTests.xctest */,
 				FB9C49362FD6250800BF5AD5 /* CardTransectionsTests */,

@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "67EBC6CB-E792-47F5-A055-A25E1351F740",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CardTransections.xcodeproj",
+      "identifier" : "FB9C48F62FD6155B00BF5AD5",
+      "name" : "CardTransections"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:CardTransections.xcodeproj",
+        "identifier" : "FB9C49342FD6250800BF5AD5",
+        "name" : "CardTransectionsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
